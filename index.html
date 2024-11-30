@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Скачать драйверы</title>
+  <style>
+    body {
+      background-color: #000080; /* Синий фон */
+      font-family: sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #000000; /* Тень для заголовка */
+    }
+
+    .moon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #FFFFE0; /* Цвет луны */
+      box-shadow: inset -10px -10px 20px #CCCCCC; /* Тень для луны */
+    }
+
+    .drivers ul {
+      list-style: none;
+      padding: 0;
+    }
+    .drivers li {
+      margin-bottom: 10px;
+    }
+    .drivers a {
+      color: #ADD8E6; /* Цвет ссылок */
+      text-decoration: none;
+      font-size: 1.2em;
+      display: block;
+      padding: 10px;
+      border: 2px solid #ADD8E6;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease; /* Плавный переход */
+    }
+    .drivers a:hover {
+      background-color: #ADD8E6;
+      color: #000080;
+    }
+
+    .star {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      border-radius: 50%;
+      box-shadow: 0 0 5px white; /* Эффект свечения */
+    }
+    .star:nth-child(1) { top: 10%; left: 5%; }
+    .star:nth-child(2) { bottom: 15%; right: 8%; }
+    .star:nth-child(3) { top: 30%; left: 85%; }
+  </style>
+</head>
+<body>
+  <div class="moon"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+    <div class = "container">
+        <h1>Скачать драйверы для мобильной ос ZenithOS</h1>
+        <div class = "drivers">
+            <h2>Драйвер fiveg</h2>
+            <ul>
+              <li><a href="fiveg.ko">ARM</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
